@@ -10,5 +10,5 @@ app.include_router(url_router)
 @app.get("/")
 def home():
     return {
-        "message": "URL Shortener API is running"
+        "message": "URL Shortener is running "
     }
