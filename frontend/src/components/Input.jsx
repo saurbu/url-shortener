@@ -17,7 +17,7 @@ function Input({ onResult, onLoading, onError, result }) {
 
     try {
       const response = await fetch(
-        `${import.meta.env.API_URL}/api/url/shorten`,
+        `${import.meta.env.VITE_API_URL}/api/url/shorten`,
         {
           method: "POST",
           headers: {
