@@ -32,10 +32,13 @@ def root():
 
 @app.get("/{short_code}")
 def short_url_redirect(short_code: str):
-    if short_code in ["docs", "redoc", "openapi.json"]:
-        raise HTTPException(status_code=404, detail="Not found")
-
     url = get_url(short_code)
+
+    if not url:
+        raise HTTPException(
+            status_code=404,
+            detail="Short URL not found"
+        )
 
     return RedirectResponse(
         url=url["original_url"],
