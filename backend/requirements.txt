@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-dotenv
+qrcode[pil]
+pydantic
+pymongo
+dnspython
