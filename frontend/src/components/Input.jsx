@@ -17,7 +17,7 @@ function Input({ onResult, onLoading, onError, result }) {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:8000/api/url/shorten",
+        "https://url-shortener-c0jw.onrender.com/api/url/shorten",
         {
           method: "POST",
           headers: {
