@@ -82,7 +82,7 @@ function Input({ onResult, onLoading, onError, result }) {
           type="submit"
           className="rounded-xl bg-purple-600 px-7 py-4 text-sm font-semibold transition hover:bg-purple-500 active:scale-[0.98]"
         >
-          Shorten URL
+          Short URL
         </button>
       </form>
 
